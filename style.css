@@ -265,13 +265,13 @@ p {
 
 /* End Hero Section */
 
-/* Services Section */
+/* skills Section */
 
-#services .service-top {
+#skills .skill-top {
   max-width: 500px;
   margin: 0 auto;
 }
-/* End Services Section */
+/* End skills Section */
 
 /* Projects section */
 #projects .projects {
@@ -393,7 +393,7 @@ p {
 }
 /* End About Section */
 
-/* Service Section */
+/* skill Section */
 .skillBox {
     margin-top: 20px;
     display: flex;
@@ -543,7 +543,7 @@ p {
       width: 60%; 
     } 
 }
-/* End of Service Section */
+/* End of skill Section */
 
 /* contact Section */
 #contact .contact {
@@ -819,10 +819,10 @@ p {
   }
   /* End header */
 
-  /* Service Section */
+  /* skill Section */
   .skillBar {
     width: 60%; 
   } 
-  /* End Service Section */
+  /* End skill Section */
 }
 /* End  Media Query For Desktop */
