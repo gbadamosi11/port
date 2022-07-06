@@ -266,64 +266,10 @@ p {
 /* End Hero Section */
 
 /* Services Section */
-#services .services {
-  flex-direction: column;
-  text-align: center;
-  max-width: 1500px;
-  margin: 0 auto;
-  padding: 100px 0;
-}
+
 #services .service-top {
   max-width: 500px;
   margin: 0 auto;
-}
-#services .service-bottom {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 50px;
-}
-#services .service-item {
-  flex-basis: 80%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  padding: 30px;
-  border-radius: 10px;
-  background-image: url(./img/img-1.png);
-  background-size: cover;
-  margin: 10px 5%;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-}
-#services .service-item::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-  opacity: 0.9;
-  z-index: -1;
-}
-#services .service-bottom .icon {
-  height: 80px;
-  width: 80px;
-  margin-bottom: 20px;
-}
-#services .service-item h2 {
-  font-size: 2rem;
-  color: white;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-}
-#services .service-item p {
-  color: white;
-  text-align: left;
 }
 /* End Services Section */
 
@@ -447,6 +393,158 @@ p {
 }
 /* End About Section */
 
+/* Service Section */
+.skillBox {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; 
+}
+
+  .skillBar {
+    width: 85%;
+    height: 35px;
+    margin: 2px auto; 
+}
+  
+  .skillArea {
+    width: 90%;
+    margin-left: 10px;
+    position: relative;
+    left: 0;
+    top: 7px; 
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.skill-percent{
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    
+}
+  
+  .skillName {
+    font-size: 14px;
+    position: relative;
+    left: 10px;
+    top: 5px; 
+}
+  
+  .skill-HTML {
+    width: 95%;
+    height: 2px;
+    animation: Animate-HTML 3s;
+    background-color: #E42939;
+    position: relative;
+    float: left;
+    box-sizing: border-box; 
+}
+  
+  .skill-css {
+    width: 90%;
+    height: 2px;
+    animation: Animate-CSS 3s;
+    background-color: #E42939;
+    position: relative;
+    float: left;
+    box-sizing: border-box; 
+}
+  
+  .skill-js {
+    width: 60%;
+    height: 2px;
+    animation: Animate-JS 3s;
+    background-color: #E42939;
+    position: relative;
+    box-sizing: border-box;
+    float: left; 
+}
+  
+  .skill-bootstrap {
+    width: 70%;
+    height: 2px;
+    animation: Animate-bootstrap 3s;
+    background-color: #E42939;
+    position: relative;
+    box-sizing: border-box;
+    float: left; 
+}
+  
+  .skill-tailwindcss {
+    width: 70%;
+    height: 2px;
+    animation: Animate-tailwindcss 3s;
+    background-color: #E42939;
+    position: relative;
+    box-sizing: border-box;
+    float: left; 
+}
+  
+  .skill-excel {
+    width: 60%;
+    height: 2px;
+    animation: Animate-excel 3s;
+    background-color: #E42939;
+    position: relative;
+    box-sizing: border-box;
+    float: left; 
+}
+  
+  @keyframes Animate-HTML {
+    from {
+      width: 0; 
+    }
+    to {
+      width: 95%; 
+    } 
+}
+  
+  @keyframes Animate-CSS {
+    from {
+      width: 0; 
+    }
+    to {
+      width: 90%; 
+    } 
+}
+  
+  
+  @keyframes Animate-JS {
+    from {
+      width: 0; }
+    to {
+      width: 60%; 
+    } 
+ }   
+  
+  @keyframes Animate-bootstrap {
+    from {
+      width: 0; 
+    }
+    to {
+      width: 70%; 
+    }
+ }
+  
+  @keyframes Animate-tailwindcss {
+    from {
+      width: 0; 
+    }
+    to {
+      width: 70%; 
+    }
+ }
+  
+  @keyframes Animate-excel {
+    from {
+      width: 0; 
+    }
+    to {
+      width: 60%; 
+    } 
+}
+/* End of Service Section */
+
 /* contact Section */
 #contact .contact {
   flex-direction: column;
@@ -557,16 +655,41 @@ p {
   100% {
     color: white;
     font-weight: 500;
-    font-size: 42px;
+    font-size: 48px;
   }
 }
 @keyframes text_reveal_name {
   100% {
     color: white;
-    font-size: 52px;
+    /* font-size: 52px; */
   }
+
 }
+
 /* End Keyframes */
+
+/* Media Query For phone */
+@media only screen and (min-width: 480px) {
+    .skillBar {
+      width: 80%;
+      height: 35px;
+      margin: 10px auto; 
+    }
+    .skillArea {
+      margin-left: 10px;
+      position: relative;
+      left: 35px;
+      top: 10px;
+      padding: 5px; 
+    }
+    .skillName {
+      font-size: 22px;
+      margin: 35px;
+      position: relative;
+      top: 10px; 
+    } 
+}
+/* End Media Query For Phone */
 
 /* Media Query For Tablet */
 @media only screen and (min-width: 768px) {
@@ -583,13 +706,6 @@ p {
     font-size: 7rem;
   }
   /* End Hero */
-
-  /* Services Section */
-  #services .service-bottom .service-item {
-    flex-basis: 45%;
-    margin: 2.5%;
-  }
-  /* End Services Section */
 
   /* Project */
   #projects .project-item {
@@ -673,6 +789,12 @@ p {
 }
 /* End Media Query For Tablet */
 
+@media only screen and (min-width: 992px) {
+    .skillBar {
+      width: 70%; 
+    } 
+}
+
 /* Media Query For Desktop */
 @media only screen and (min-width: 1200px) {
   /* header */
@@ -697,9 +819,10 @@ p {
   }
   /* End header */
 
-  #services .service-bottom .service-item {
-    flex-basis: 22%;
-    margin: 1.5%;
-  }
+  /* Service Section */
+  .skillBar {
+    width: 60%; 
+  } 
+  /* End Service Section */
 }
 /* End  Media Query For Desktop */
